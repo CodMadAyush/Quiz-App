@@ -1,0 +1,128 @@
+*::selection{
+    background-color: #000000;
+    color: #fff;
+}
+
+body {
+    font-family: agency fb;
+    font-weight: 800;
+    margin: 0;
+    padding: 0;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: #681896;
+    overflow: hidden;
+}
+.welcome-text {
+    color: rgb(0, 0, 0);
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    animation: fade-in 3s forwards;
+    padding-top: 20vh;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: #000000;
+}
+
+.container {
+    max-width: 600px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+h1 {
+    color: #000000;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #ff9a03;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #000000;
+    transform: rotate(-5deg),tr;
+}
+
+.quiz-highlight {
+    color: #ff7300; /* Vibrant color for the highlighted text */
+    animation: highlightText 2s infinite alternate; /* Unique animation for the highlighted text */
+}
+
+@keyframes highlightText {
+    from {
+        text-shadow: 0 0 10px #ff7f50;
+    }
+    to {
+        text-shadow: 0 0 20px #ff8eec, 0 0 30px #ef45ff;
+    }
+}
+
+.para{
+    text-decoration: underline solid 3px ;
+}
+
+.credits{
+    /* display: flex;
+    justify-content: center; */
+    /* align-items: end; */
+    background-color: #474747;
+    color: white;
+    /* width: 90vw; */
+    height: 90px;
+    /* margin-left:30vw ; */
+    margin-top: 30vh;
+    border-radius: 30px;
+}
+.p1{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-top: 10px;
+}
+.p2{
+    display: flex;
+    justify-content: center;
+    color: #ff9100;
+    font-size: 20px;
+}
+
+.info{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    margin-top: 20vh;
+    text-align: center;
+    background:transparent ;
+    color: rgb(8, 8, 8);
+    
+}
