@@ -5,7 +5,7 @@
 
 body {
     font-family: agency fb;
-    font-weight: 800;
+    font-weight: 700;
     margin: 0;
     padding: 0;
 }
@@ -66,6 +66,32 @@ button {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+}
+#hiddentxt{
+    background-color: #b3ff00;
+    color: #000000;
+    padding: 1px;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+#hiddentxt::before{
+   content: "";
+   position: absolute;
+   left: 50%;
+   top: 100%;
+   transform: translateX(50px);
+   border: 15px solid;
+   border-color: #000 #0000 #0000 #0000;
+   
+}
+  
+#nobutton:hover #hiddentxt{
+    top: -130%;
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(-50px);
 }
 
 button:hover {
