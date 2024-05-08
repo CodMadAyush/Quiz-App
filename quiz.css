@@ -1,12 +1,13 @@
 body {
     font-family: agency fb;
     margin: 0;
+    font-weight: 700;
     padding: 0;
     background-color: #dddddd;
 }
 
 .container {
-    max-width: 800px;
+    max-width: 500px;
     margin: 50px auto;
     padding: 20px;
     background-color: #fff;
@@ -167,4 +168,29 @@ button:hover {
 .high-scores-container li {
     font-size: 16px;
     margin-bottom: 5px;
+}
+#hiddentxt{
+    background-color: #b3ff00;
+    color: #000000;
+    padding: 1px;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+#hiddentxt::before{
+   content: "";
+   position: absolute;
+   left: 50%;
+   top: 100%;
+   transform: translateX(-50%);
+   border: 15px solid;
+   border-color: #000 #0000 #0000 #0000;
+   
+}
+  
+#nobutton:hover #hiddentxt{
+    top: -130%;
+    visibility: visible;
+    opacity: 1;
 }
